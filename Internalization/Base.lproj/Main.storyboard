@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iws-6X-x1O">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZU7-GX-oau">
+                                <rect key="frame" x="740" y="281" width="440" height="127"/>
+                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="9Jx-RO-rcm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="440" id="XiM-gq-e5m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="53"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="English">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="englishAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Mh4-fB-1OO"/>
+                                    <segue destination="vo3-QY-y5z" kind="show" id="KSF-GP-BjT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeq-aS-Juk">
+                                <rect key="frame" x="740" y="513" width="440" height="127"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="FYU-pA-aZv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="440" id="Fks-Pv-LD4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Spanish"/>
+                                <connections>
+                                    <action selector="spanishAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="xZ4-St-uYE"/>
+                                    <segue destination="vo3-QY-y5z" kind="show" id="05Z-XW-Fbg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yeq-aS-Juk" secondAttribute="trailing" id="80T-Oy-Fmb"/>
+                            <constraint firstItem="ZU7-GX-oau" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="136" id="PSR-R3-evo"/>
+                            <constraint firstItem="yeq-aS-Juk" firstAttribute="top" secondItem="ZU7-GX-oau" secondAttribute="bottom" constant="105" id="UXc-j6-XLT"/>
+                            <constraint firstItem="ZU7-GX-oau" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wu6-TO-1qx" secondAttribute="leading" id="Ysd-Ou-LVw"/>
+                            <constraint firstItem="yeq-aS-Juk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fzw-Uu-4H7"/>
+                            <constraint firstItem="yeq-aS-Juk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wu6-TO-1qx" secondAttribute="leading" id="s4s-Re-vWC"/>
+                            <constraint firstItem="ZU7-GX-oau" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uOb-OV-Gh7"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZU7-GX-oau" secondAttribute="trailing" id="wk3-O8-HcL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yeq-aS-Juk" secondAttribute="bottom" constant="380" id="y8S-qi-Rnk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fg5-rz-Cx9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805" y="1222"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="PAL-4n-NA8">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vo3-QY-y5z" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Ac-67-RrG"/>
+                        <viewControllerLayoutGuide type="bottom" id="CsK-y8-Xyt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g0n-yK-0OS">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2P-xw-LHR">
+                                <rect key="frame" x="377" y="462" width="1166" height="156"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="70"/>
+                                <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="E2P-xw-LHR" firstAttribute="leading" secondItem="Smy-zf-lzt" secondAttribute="leading" constant="287" id="3qD-Ra-6pK"/>
+                            <constraint firstItem="E2P-xw-LHR" firstAttribute="top" secondItem="3Ac-67-RrG" secondAttribute="bottom" constant="317" id="RS3-9T-QIH"/>
+                            <constraint firstItem="E2P-xw-LHR" firstAttribute="centerX" secondItem="g0n-yK-0OS" secondAttribute="centerX" id="yve-x8-lKV"/>
+                            <constraint firstItem="E2P-xw-LHR" firstAttribute="centerY" secondItem="g0n-yK-0OS" secondAttribute="centerY" id="zuz-rY-qqR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Smy-zf-lzt"/>
+                    </view>
+                    <connections>
+                        <outlet property="languageLabel" destination="E2P-xw-LHR" id="QUm-OK-5FD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ego-XZ-0yf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3990" y="1222"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Chr-3t-g01">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iws-6X-x1O" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qOo-5A-37j">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Y0h-PE-hAL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMY-1E-ZQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-271" y="1222"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="05Z-XW-Fbg"/>
+    </inferredMetricsTieBreakers>
+</document>
