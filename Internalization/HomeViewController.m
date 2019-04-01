@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import "Language Manager/LanguageManager.h"
+
 
 @interface HomeViewController ()
 
@@ -18,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    languageLabel.text = [LanguageManager localizedStringForKey:@"How are you"];
+
 }
 
 /*

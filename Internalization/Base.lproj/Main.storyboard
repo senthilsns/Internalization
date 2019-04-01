@@ -70,6 +70,10 @@
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fg5-rz-Cx9"/>
+                    <connections>
+                        <outlet property="englishButton" destination="ZU7-GX-oau" id="vVS-cZ-8Pi"/>
+                        <outlet property="spanishButton" destination="yeq-aS-Juk" id="NZd-S4-OdC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

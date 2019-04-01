@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *englishButton;
+@property (weak, nonatomic) IBOutlet UIButton *spanishButton;
 
 @end
 
